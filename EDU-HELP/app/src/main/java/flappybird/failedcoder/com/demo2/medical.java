@@ -5,19 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class Engineering extends AppCompatActivity {
+public class medical extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_engineering);
+        setContentView(R.layout.activity_medical);
     }
     public void onButtonClick(View v) {
-        if (v.getId() == R.id.Bdisplay1) {
-            Intent i = new Intent(Engineering.this, mains.class);
+        if (v.getId() == R.id.Bdisplay3) {
+            Intent i = new Intent(medical.this, AIIMS.class);
             startActivity(i);
-        } else if (v.getId() == R.id.Bdisplay2) {
-            Intent i = new Intent(Engineering.this, Advance.class);
+        } else if (v.getId() == R.id.Bdisplay4) {
+            Intent i = new Intent(medical.this, NEET.class);
             startActivity(i);
         }
     }

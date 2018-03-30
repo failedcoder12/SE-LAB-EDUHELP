@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="flappybird.failedcoder.com.demo2">
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE " />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
@@ -34,7 +37,7 @@
         <activity android:name=".start" />
         <activity android:name=".Result" />
         <activity android:name=".website" />
-        <activity android:name=".AlbumsAdapter"/>
+        <activity android:name=".AlbumsAdapter" />
         <activity
             android:name=".recyclecard"
             android:theme="@style/NoActionBar" />
@@ -51,6 +54,35 @@
         <activity android:name=".QU" />
         <activity android:name=".TR" />
         <activity android:name=".GR" />
+        <activity android:name=".medical" />
+        <activity android:name=".AIIMS" />
+        <activity android:name=".paper1" />
+        <activity android:name=".paper2" />
+        <activity android:name=".paper3" />
+        <activity android:name=".paper4" />
+        <activity android:name=".paper5" />
+        <activity android:name=".paper6" />
+        <activity android:name=".NEET" />
+        <activity android:name=".paper7" />
+        <activity android:name=".paper8" />
+        <activity android:name=".paper9" />
+        <activity android:name=".paper10" />
+        <activity android:name=".paper11" />
+        <activity android:name=".paper12" />
+        <activity android:name=".mains" />
+        <activity android:name=".Advance" />
+        <activity android:name=".paper13" />
+        <activity android:name=".paper14" />
+        <activity android:name=".paper15" />
+        <activity android:name=".paper16" />
+        <activity android:name=".paper17" />
+        <activity android:name=".paper18" />
+        <activity android:name=".paper19" />
+        <activity android:name=".paper20" />
+        <activity android:name=".paper21" />
+        <activity android:name=".paper22" />
+        <activity android:name=".paper23" />
+        <activity android:name=".paper24"></activity>
     </application>
 
 </manifest>
