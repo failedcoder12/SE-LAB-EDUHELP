@@ -38,25 +38,12 @@ public class Home extends AppCompatActivity {
         };
 
     }
-
-    private Boolean exit = false;
     @Override
-    public void onBackPressed() {
-        if (exit) {
-            finish(); // finish activity
-        } else {
-            Toast.makeText(this, "Press Back again to Exit.",
-                    Toast.LENGTH_SHORT).show();
-            exit = true;
-            new Handler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    exit = false;
-                }
-            },   1000);
-
-        }
-
+    public void onBackPressed(){
+        Intent a = new Intent(Intent.ACTION_MAIN);
+        a.addCategory(Intent.CATEGORY_HOME);
+        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(a);
     }
     public void onButtonClick(View v) {
         if (v.getId() == R.id.webs) {
@@ -73,7 +60,7 @@ public class Home extends AppCompatActivity {
             startActivity(i);
         }
         if(v.getId() == R.id.gguuuuoo){
-            Intent i = new Intent(Home.this,Guuo.class);
+            Intent i = new Intent(Home.this,Camera.class);
             startActivity(i);
         }
         if(v.getId() == R.id.aabboouutt){

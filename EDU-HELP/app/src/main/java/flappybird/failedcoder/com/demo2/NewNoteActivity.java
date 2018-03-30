@@ -119,6 +119,12 @@ public class NewNoteActivity extends AppCompatActivity {
 
                 }
             });
+        }else {
+            Bundle bundle = getIntent().getExtras();
+            if(bundle != null) {
+                String message = bundle.getString("message");
+                etContent.setText(message);
+            }
         }
     }
 

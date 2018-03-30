@@ -62,7 +62,11 @@ public class Simple_Notes extends AppCompatActivity {
         super.onStart();
 
     }
-
+    @Override
+    public void onBackPressed(){
+        Intent i = new Intent(Simple_Notes.this,Home.class);
+        startActivity(i);
+    }
     private void loadData() {
         if (fNotesDatabase != null) {
             Query query = fNotesDatabase.orderByValue();
