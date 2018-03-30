@@ -1,5 +1,6 @@
 package flappybird.failedcoder.com.demo2;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -86,6 +87,8 @@ public class NewNoteActivity extends AppCompatActivity {
 
                 if (!TextUtils.isEmpty(title) && !TextUtils.isEmpty(content)) {
                     createNote(title, content);
+                    Intent i = new Intent(NewNoteActivity.this,Simple_Notes.class);
+                    startActivity(i);
                 } else {
                     Snackbar.make(view, "Fill empty fields", Snackbar.LENGTH_SHORT).show();
                 }

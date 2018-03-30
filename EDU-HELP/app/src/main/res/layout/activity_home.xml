@@ -164,7 +164,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Flappy Bird"
+                        android:text="Guuo"
                         android:textStyle="bold" />
 
                     <TextView
@@ -172,7 +172,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="Play flappy bird to get free from boredom"
+                        android:text="Play the classic Guuo game and get free from boredom"
                         android:textColor="@android:color/darker_gray" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
