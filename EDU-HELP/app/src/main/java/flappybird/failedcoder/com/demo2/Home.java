@@ -52,6 +52,10 @@ public class Home extends AppCompatActivity {
             Intent i = new Intent(Home.this,Guuo.class);
             startActivity(i);
         }
+        if(v.getId() == R.id.aabboouutt){
+            Intent i = new Intent(Home.this,Simple_Notes.class);
+            startActivity(i);
+        }
     }
 
     @Override
